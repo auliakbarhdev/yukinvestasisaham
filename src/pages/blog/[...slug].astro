@@ -14,9 +14,7 @@ import { SITE } from "@data/constants";
 
 // getStaticPaths is used to pre-render all routes based on the blog posts
 export async function getStaticPaths() {
-  const blogPosts = await getCollection("blog", ({ id }) => {
-    return id.startsWith("en/");
-  });
+  const blogPosts = await getCollection("blog");
   return blogPosts.map((post) => ({
     params: { slug: post.slug },
     props: { post },
@@ -28,9 +26,6 @@ const { post } = Astro.props;
 // Get all blog posts
 const blogPosts: CollectionEntry<"blog">[] = await getCollection(
   "blog",
-  ({ id }) => {
-    return id.startsWith("en/");
-  }
 );
 
 // Filter out the current post to get related posts
