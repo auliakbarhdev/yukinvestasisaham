@@ -117,6 +117,11 @@ ScrewFast is an open-source template designed for quick and efficient web projec
 
 This guide will provide you with the necessary steps to set up and familiarize yourself with the Astro project on your local development machine.
 
+### Prerequisites
+
+- node v21.7.3
+- latest Web Browser
+
 ### Installation
 
 Start by installing the project dependencies. Open your terminal, navigate to the project's root directory, and execute:
