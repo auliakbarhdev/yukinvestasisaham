@@ -1,11 +1,11 @@
 ---
 // Import the necessary dependencies
-import GithubBtn from "@components/ui/buttons/GithubBtn.astro";
+import StartBtn from "../../ui/buttons/StartBtn.astro";
 
 // Define props from Astro
 const { title, subTitle, url } = Astro.props;
 
-const btnTitle = "Continue with Github";
+const btnTitle = "Buka Akun Sekarang";
 
 // Define TypeScript interface for props
 interface Props {
@@ -16,7 +16,7 @@ interface Props {
 ---
 
 <section
-  class="relative mx-auto max-w-[85rem] px-4 pb-24 pt-10 sm:px-6 lg:px-8"
+  class="relative mx-auto max-w-[85rem] px-4 pb-24 pt-10 sm:px-6 lg:px-8 bg"
 >
   <!-- Decorating SVG elements -->
   <div
@@ -134,11 +134,11 @@ interface Props {
       )
     }
   </div>
-  <!-- Github Button -->
+  <!-- Start Button -->
   {
     url && (
       <div class="mt-8 flex justify-center gap-3">
-        <GithubBtn url={url} title={btnTitle}/>
+        <StartBtn url={url} title={btnTitle}/>
       </div>
     )
   }

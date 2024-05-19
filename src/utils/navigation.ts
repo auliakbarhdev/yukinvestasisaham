@@ -9,20 +9,16 @@ const navBarLinks = [
 // An array of links for footer
 const footerLinks = [
   {
-    section: "Ecosystem",
-    links: [
-      { name: "Documentation", url: "/welcome-to-docs/" },
-      { name: "Tools & Equipment", url: "/products" },
-      { name: "Construction Services", url: "/services" },
-    ],
+    section: "",
+    links: [],
   },
   {
-    section: "Company",
+    section: "Yuk Investasi Saham",
     links: [
-      { name: "About us", url: "#" },
-      { name: "Blog", url: "/blog" },
-      { name: "Careers", url: "#" },
-      { name: "Customers", url: "#" },
+      { name: "About", url: "#" },
+      { name: "Open Account", url: "#" },
+      { name: "Articles", url: "/blog" },
+      { name: "Contact", url: "/contact" },
     ],
   },
 ];
@@ -30,9 +26,9 @@ const footerLinks = [
 const socialLinks = {
   facebook: "https://www.facebook.com/",
   x: "https://twitter.com/",
-  github: "https://github.com/mearashadowfax/ScrewFast",
-  google: "https://www.google.com/",
-  slack: "https://slack.com/",
+  telegram: "http://t.me/yukinvestasisahamid",
+  instagram: "https://www.instagram.com/stockenthusias.id/",
+  whatsapp: "https://wa.me/message/ZR63IOXREFFOD1"
 };
 
 export default {

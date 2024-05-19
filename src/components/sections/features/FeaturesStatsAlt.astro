@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import product5 from "@images/features-image.avif";
+import KevinImage from "@images/features-image.avif";
 
 // Define props from Astro
 const { title, subTitle, benefits } = Astro.props;
@@ -9,7 +9,7 @@ const { title, subTitle, benefits } = Astro.props;
 interface Props {
   title: string;
   subTitle?: string;
-  benefits?: Array<string>;
+  benefits?: Array<{ description: string; tooltip?: string }>;
 }
 
 // Define SVG marker to be used in the component
@@ -21,8 +21,25 @@ const ListItemMarker: string = `<svg fill="none" viewBox="0 0 24 24" stroke-widt
 >
   <!-- Grid -->
   <div class="lg:grid lg:grid-cols-12 lg:items-center lg:gap-16">
-    <div class="lg:col-span-7">
-      <Image class="rounded-xl" src={product5} alt="Mockup of floating boxes" />
+    <div class="lg:col-span-3">
+      <div
+        data-astro-prefetch
+        class="group relative flex h-48 items-end overflow-hidden rounded-xl shadow-lg outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none md:h-80">
+        <Image
+          class="rounded-xl absolute inset-0 h-full w-full object-cover object-center transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110"
+          src={KevinImage}
+          alt="Kevin Wijaya"
+          draggable="false" />
+        <!-- An overlay gradient that sits on top of the product image-->
+        <div
+          class="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-800 via-transparent to-transparent opacity-50"
+        />
+        <span
+          class="relative mb-3 ml-4 inline-block text-sm font-bold text-neutral-50 transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110 md:ml-5 md:text-lg"
+        >
+          Kevin Wijaya
+        </span>
+      </div>
     </div>
     <div class="mt-5 sm:mt-10 lg:col-span-5 lg:mt-0">
       <div class="space-y-6 sm:space-y-8">
@@ -44,12 +61,24 @@ const ListItemMarker: string = `<svg fill="none" viewBox="0 0 24 24" stroke-widt
           benefits && (
             <ul class="space-y-2 sm:space-y-4">
               {benefits.map((item) => (
-                <li class="flex space-x-3">
-                  <Fragment set:html={ListItemMarker} />
-                  <span class="text-pretty text-base font-medium text-neutral-600 dark:text-neutral-400">
-                    {item}
-                  </span>
-                </li>
+                <>
+                  <li class="relative flex space-x-3 hs-tooltip [--trigger:hover] [--placement:bottom]">
+                    <Fragment set:html={ListItemMarker} />
+                    <span class="hs-tooltip-toggle text-pretty text-base font-medium text-neutral-600 dark:text-neutral-400">
+                      {item.description}
+                    </span>
+
+                    {
+                      item?.tooltip && (
+                        <span
+                          class="hs-tooltip-content md:w-80 hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded shadow-sm dark:bg-neutral-700"
+                          role="tooltip">
+                          {item.tooltip}
+                        </span>
+                      )
+                    }
+                  </li>
+                </>
               ))}
             </ul>
           )
@@ -58,3 +87,6 @@ const ListItemMarker: string = `<svg fill="none" viewBox="0 0 24 24" stroke-widt
     </div>
   </div>
 </section>
+
+<!--Import the necessary plugin-->
+<script is:inline src="/scripts/vendor/preline/tooltip/index.js"></script>

@@ -1,0 +1,38 @@
+---
+// Import necessary modules and utilities
+import { Image } from "astro:assets";
+import Icon from "@components/ui/icons/Icon.astro";
+import type { CollectionEntry } from "astro:content";
+
+const { imgCard, imgAlt, description, title } = Astro.props;
+
+interface Props {
+  product: CollectionEntry<"products">;
+}
+// Define classes to be used with the Image component
+const imageClass =
+  "absolute inset-0 h-full w-full object-cover object-center transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110";
+---
+
+<div class="flex-col">
+  <!-- A clickable card that leads to the details of the product-->
+  <div
+    data-astro-prefetch
+    class="group relative flex h-48 items-end overflow-hidden rounded-xl outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none md:h-80"
+  >
+    <!-- The product's main image -->
+    <Image
+      src={imgCard}
+      alt={imgAlt}
+      draggable={"false"}
+      class={imageClass}
+    />
+  </div>
+  <!-- The product's subtitle and the anchor SVG icon-->
+  <p
+    class="relative mb-3 mt-4 inline-block text-sm font-bold text-neutral-800 dark:text-neutral-200 md:text-lg"
+  >
+    {title}
+  </p>
+  <p>{description}</p>
+</div>

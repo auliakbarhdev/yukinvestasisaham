@@ -1,11 +1,14 @@
 ---
 // Destructure the properties from Astro.props
+
+import { Astro } from "astro/env";
 const { title, url } = Astro.props;
 
 // Define TypeScript interface for the properties
 interface Props {
   title?: string;
   url?: string;
+  style?: string;
 }
 // Define CSS classes for the hyperlink button
 const baseClasses =
@@ -20,11 +23,13 @@ const ringClasses = "ring-zinc-500";
 
 const darkClasses =
   "dark:border-neutral-700 dark:bg-zinc-700 dark:text-neutral-300 dark:ring-zinc-200 dark:hover:bg-zinc-600 dark:focus:outline-none";
+
+const { style } = Astro.props
 ---
 
 <!-- Styled hyperlink -->
 <a
-  class={`${baseClasses} ${borderClasses} ${bgColorClasses} ${hoverClasses} ${disableClasses} ${fontSizeClasses} ${ringClasses} ${darkClasses}`}
+  class={`${baseClasses} ${borderClasses} ${bgColorClasses} ${hoverClasses} ${disableClasses} ${fontSizeClasses} ${ringClasses} ${darkClasses} ${style}`}
   href={url}
 >
   {title}

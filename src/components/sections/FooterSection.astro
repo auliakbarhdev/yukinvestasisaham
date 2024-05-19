@@ -1,7 +1,6 @@
 ---
 // Import the necessary dependencies
 import FooterSocialLink from "@components/ui/links/FooterSocialLink.astro";
-import EmailFooterInput from "@components/ui/forms/input/EmailFooterInput.astro";
 import enStrings from "@utils/navigation.ts";
 import Icon from "@components/ui/icons/Icon.astro";
 import BrandLogo from "@components/BrandLogo.astro";
@@ -11,10 +10,14 @@ import { SITE } from "@data/constants";
 const strings = enStrings;
 
 // Define the variables that will be used in this component
-const sectionThreeTitle: string = "Stay up to date";
-const sectionThreeContent: string =
-  "Stay updated with the latest tools and exclusive deals.";
-const crafted: string = "Crafted by";
+const sectionThreeTitle: string = "Alamat Kantor";
+const sectionThreeContent: string[] =
+  [
+    "Mirae Asset Sekuritas Indonesia Pluit",
+    "Jl. Pluit Sakti Raya No.No.31 A 2, RT.2/RW.6, Pluit, Kec. Penjaringan, Jkt Utara, Daerah Khusus Ibukota Jakarta 14450",
+    "(+62 21) 66678482"
+  ];
+const managed: string = "Managed by";
 ---
 
 <footer class="w-full bg-neutral-300 dark:bg-neutral-900">
@@ -55,15 +58,18 @@ const crafted: string = "Crafted by";
       }
 
       <div class="col-span-2">
-        <h3 class="font-bold text-neutral-800 dark:text-neutral-200">
-          {sectionThreeTitle}
-        </h3>
+        <a href="https://maps.app.goo.gl/h78TkF3N3Q77vNdz6" target="_blank">
+          <h3 class="font-bold hover:text-orange-400 text-neutral-800 dark:text-neutral-200 dark:hover:text-orange-400">
+            {sectionThreeTitle}
+          </h3>
+        </a>
 
         <form>
-          <EmailFooterInput />
-          <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-400">
-            {sectionThreeContent}
-          </p>
+          {
+            sectionThreeContent.map((content) => <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-400">
+              {content}
+            </p>)
+          }
         </form>
       </div>
     </div>
@@ -73,28 +79,28 @@ const crafted: string = "Crafted by";
     >
       <div class="flex items-center justify-between">
         <p class="text-sm text-neutral-600 dark:text-neutral-400">
-          © <span id="current-year"></span> {SITE.title}. {crafted}
+          © <span id="current-year"></span> {SITE.title}. {managed}
           <a
             class="rounded-lg font-medium underline underline-offset-2 outline-none ring-zinc-500 transition duration-300 hover:text-neutral-700 hover:decoration-dashed focus:outline-none focus-visible:ring dark:ring-zinc-200 dark:hover:text-neutral-300"
-            href="https://sobstvennoai.dev"
+            href="mailto:kvnwjya@gmail.com"
             target="_blank"
-            rel="noopener noreferrer">sobstvennoAI</a
+            rel="noopener noreferrer">Kevin Wijaya</a
           >.
         </p>
       </div>
 
       <!-- Social Brands -->
       <div>
-        <FooterSocialLink url={strings.socialLinks.facebook}
-          ><Icon name="facebookFooter" />
-        </FooterSocialLink>
-
-        <FooterSocialLink url={strings.socialLinks.x}
-          ><Icon name="xFooter" /></FooterSocialLink
+        <FooterSocialLink url={strings.socialLinks.whatsapp}
+          ><Icon name="whatsappFooter" /></FooterSocialLink
         >
 
-        <FooterSocialLink url={strings.socialLinks.google}
-          ><Icon name="googleFooter" />
+        <FooterSocialLink url={strings.socialLinks.telegram}
+          ><Icon name="telegramFooter" />
+        </FooterSocialLink>
+
+        <FooterSocialLink url={strings.socialLinks.instagram}
+          ><Icon name="instagramFooter" />
         </FooterSocialLink>
       </div>
     </div>

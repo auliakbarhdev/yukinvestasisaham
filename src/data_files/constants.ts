@@ -1,12 +1,12 @@
 import ogImageSrc from "@images/social.png";
 
 export const SITE = {
-  title: "ScrewFast",
-  tagline: "Top-quality Hardware Tools",
-  description: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
-  description_short: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
-  url: "https://screwfast.uk",
-  author: "Emil Gulamov",
+  title: "YukInvestasiSaham",
+  tagline: "Investasi yang Tepat, Masa Depan yang Cerah",
+  description: "Kami adalah bagian dari Mirae Asset, sebuah perusahaan investasi global yang berkomitmen untuk membantu Anda mencapai tujuan keuangan Anda. Dengan pengalaman bertahun-tahun di industri ini, kami menawarkan solusi investasi yang inovatif dan disesuaikan dengan kebutuhan Anda.",
+  description_short: "Kami hadir untuk membantu Anda dalam mengoptimalkan investasi saham Anda dengan panduan dan layanan terbaik dari Mirae Asset, salah satu perusahaan manajer investasi terkemuka di Indonesia.",
+  url: "https://yukinvestasisaham.com",
+  author: "Aulia Akbar Harahap",
 };
 
 export const SEO = {
