@@ -31,4 +31,3 @@ Untuk mengurangi risiko, penting untuk diversifikasi portofolio investasi Anda. 
 
 Investasi saham dapat menjadi instrumen yang powerful untuk mengembangkan kekayaan, namun juga memiliki risiko yang perlu dipertimbangkan. Dengan pemahaman yang baik tentang dasar-dasar investasi saham, serta dengan melihat risiko dan manfaatnya, Anda dapat memulai perjalanan investasi Anda dengan langkah yang lebih percaya diri.
 
-As we look towards the future, one thing is clear: the legacy of ScrewFast will continue to shape the world of construction for years to come, inspiring generations of builders to dream big and push the limits of possibility. With ScrewFast leading the way, the future of construction has never looked brighter.

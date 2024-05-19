@@ -30,10 +30,10 @@ export const SEO = {
 };
 
 export const OG = {
-  locale: "en_US",
+  locale: "id",
   type: "website",
   url: SITE.url,
-  title: `${SITE.title}: : Hardware Tools & Construction Services`,
-  description: "Equip your projects with ScrewFast's top-quality hardware tools and expert construction services. Trusted by industry leaders, ScrewFast offers simplicity, affordability, and reliability. Experience the difference with user-centric design and cutting-edge tools. Start exploring now!",
+  title: `${SITE.title}: : Investment Management Services`,
+  description: "Kami adalah bagian dari Mirae Asset, sebuah perusahaan investasi global yang berkomitmen untuk membantu Anda mencapai tujuan keuangan Anda. Dengan pengalaman bertahun-tahun di industri ini, kami menawarkan solusi investasi yang inovatif dan disesuaikan dengan kebutuhan Anda.",
   image: ogImageSrc,
 };
