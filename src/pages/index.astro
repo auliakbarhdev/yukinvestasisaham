@@ -7,18 +7,19 @@ import HeroSectionAlt from "@components/sections/landing/HeroSectionAlt.astro";
 import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
 import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
 import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
-import PricingSection from "@components/sections/pricing/PricingSection.astro";
+import AccountSection from "../components/sections/accounts/AccountSection.astro";
 import FAQ from "@components/sections/FAQ.astro";
 import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
 import heroImage from "@images/hero-image.png";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
-import pricing from "@data/pricing.json";
+import accounts from "../data_files/accounts.json";
 import construction from "@images/construction-image.avif";
 import coins from "@images/silver-golden-coins-falling-coins-wooden-background.jpg";
-import dashboard from "@images/dashboard-image.avif";
+import dashboard from "@images/dashboard-image.png";
 
-import avatar from "@images/icon.png"
+import avatar from "@images/kevin-wijaya-tr.png"
+import { socialLinks } from "@utils/navigation";
 
 const avatarSrcs: Array<string | any> = [];
 ---
@@ -26,8 +27,8 @@ const avatarSrcs: Array<string | any> = [];
 <MainLayout>
   <AnnouncementBanner
     btnId="dismiss-button"
-    btnTitle="Chat saya sekarang"
-    url="https://wa.me/message/ZR63IOXREFFOD1"
+    btnTitle="Buka akun sekarang"
+    url={socialLinks.openAccount}
   />
 
   <HeroSection
@@ -62,30 +63,30 @@ const avatarSrcs: Array<string | any> = [];
   />
 
   <FeaturesNavs
-    title=`Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
+    title=`Sesuaikan penawaran dari <span class="text-yellow-500 dark:text-yellow-400">Mirae Asset</span> untuk memenuhi kebutuhan investasi dan keuangan Anda secara sempurna.`
     tabs={[
       {
-        heading: "Cutting-Edge Tools",
+        heading: "Alat Investasi Terkini",
         content:
-          "Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
+          "Tingkatkan proyek investasi Anda dengan alat-alat terkini dari Mirae Asset. Rasakan efisiensi yang lebih tinggi dalam manajemen investasi dengan solusi otomatis kami yang canggih.",
         svg: "tools",
         src: coins,
-        alt: "Yellow and black heavy equipment on brown grass field",
+        alt: "Silver and golden coins falling on wooden background",
         first: true,
       },
       {
-        heading: "Intuitive Dashboards",
+        heading: "Dasbor yang Intuitif",
         content:
-          "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
+          "Navigasikan dengan mudah menggunakan dasbor intuitif dari Mirae Asset. Atur dan awasi investasi Anda dengan lancar, dengan antarmuka yang ramah pengguna yang dirancang untuk manajemen alur kerja yang cepat dan efektif.",
         svg: "dashboard",
         src: dashboard,
         alt: "A screenshot or graphic representation of the intuitive dashboard",
         second: true,
       },
       {
-        heading: "Robust Features",
+        heading: "Fitur-Fitur Unggulan",
         content:
-          "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
+          "Minimalkan kompleksitas, maksimalkan produktivitas. Fitur-fitur unggulan dari Mirae Asset dirancang untuk menyederhanakan proses investasi Anda, memberikan hasil yang menonjol karena keunggulannya.",
         svg: "house",
         src: construction,
         alt: "Gray metal building frame near tower crane during daytime",
@@ -94,42 +95,42 @@ const avatarSrcs: Array<string | any> = [];
   />
 
   <TestimonialsSection
-    title="Fast-Track Your Projects"
-    subTitle="At ScrewFast, we ensure a swift start with instant account setup. Experience the speed of construction redefined."
+    title="Kelola Keuangan Anda"
+    subTitle="Solusi Investasi yang Disesuaikan untuk Anda"
     ;
     testimonials={[
       {
         content:
-          "ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!",
-        author: "Samantha Ruiz",
-        role: "Chief Operating Officer | ConstructIt Inc.",
+          "Dapatkan saran investasi yang tepat dari tim ahli kami. Kami membantu Anda mengelola portofolio investasi Anda dengan strategi yang terukur dan berkelanjutan. Kami juga menyediakan informasi terkini dan edukasi tentang dunia investasi saham.",
+        author: "Kevin Wijaya",
+        role: "Investment Specialist Mirae Asset Sekuritas",
         avatarSrc: avatar,
       },
     ]}
     statistics={[
       {
-        count: "70k+",
+        count: "Makin Cuan",
         description:
-          "customers equipped — from DIY to major construction firms",
+          "Fee Murah",
       },
       {
-        count: "35%",
+        count: "Tumbuh Bersama",
         description:
-          "uptick in project efficiency with ScrewFast tools and services",
+          "27 Office Education",
       },
       {
-        count: "15.3%",
+        count: "Pilih Sesuai Keinginan",
         description:
-          "reduction in maintenance costs reported by long-term clients",
+          "Beragam Pilihan Investasi",
       },
       {
-        count: "2x",
-        description: "quicker assembly using innovative fastening solutions",
+        count: "Kemudahan Akses",
+        description: "Aplikasi Saham Fitur Lengkap",
       },
     ]}
   />
 
-  <PricingSection pricing={pricing} />
+  <AccountSection accounts={accounts} />
 
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 

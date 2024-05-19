@@ -1,0 +1,48 @@
+{
+  "title": "Jenis Akun Saham",
+  "subTitle": "4 Jenis Akun Saham Mirae Asset Sekuritas Yang Harus Anda Ketahui.",
+  "items": [
+    {
+      "name": "Akun Reguler",
+      "list": [
+        "Fee beli dan Jual 0,15%/0,25%",
+        "Bunga penalti 0,2%/hari",
+        "Dana pinjaman/limit margin 3x cash",
+        "Forced Sell T+4",
+        "Semua saham dapat ditransaksikan"
+      ]
+    },
+    {
+      "name": "Akun Margin",
+      "list": [
+        "Fee beli dan jual 0,15%/0,25%",
+        "Dana pinjaman/limit margin 2x cash",
+        "Bunga penalti 0,05%/hari atau 18%/tahun",
+        "Wajib memiliki akun reguler dahulu",
+        "Forced sell margin ratio >65%",
+        "Yang dapat ditransaksikan hanya saham dalam indeks saham margin"
+      ]
+    },
+    {
+      "name": "Akun Day Trade",
+      "list": [
+        "Wajib memiliki akun regular terlebih dahulu",
+        "Fee beli dan jual 0,08%/0,18%",
+        "Dana pinjaman/limit margin 5x cash",
+        "Tidak ada bunga penalti",
+        "Hanya untuk 1 hari transaksi saham",
+        "Forced sell di jam 15.30 WIB",
+        "Yang dapat ditransaksikan hanya saham dalam indeks LQ45"
+      ]
+    },
+    {
+      "name": "Akun Syariah",
+      "list": [
+        "Wajib memiliki akun reguler dahulu",
+        "Fee beli dan jual 0,15%/0,25%",
+        "Tidak ada dana pinjaman/limit margin, tidak ada bunga penalti",
+        "Yang dapat ditransaksikan hanya saham dalam indeks saham syariah"
+      ]
+    }
+  ]
+}
