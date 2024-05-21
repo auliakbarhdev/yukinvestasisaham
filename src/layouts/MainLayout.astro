@@ -3,6 +3,7 @@
 import Meta from "@components/Meta.astro";
 import Navbar from "@components/sections/Navbar.astro";
 import FooterSection from "@components/sections/FooterSection.astro";
+import FloatingButton from "@components/ui/buttons/FloatingButton.astro";
 import { SITE } from "@data/constants";
 
 // Setting expected props
@@ -65,6 +66,7 @@ We set the language of the page to English and add classes for scrollbar and scr
         <slot />
       </main>
     </div>
+    <FloatingButton />
     <FooterSection />
     <style>
       /* CSS rules for the page scrollbar and scrolling experience with lenis library */
