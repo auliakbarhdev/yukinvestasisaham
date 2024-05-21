@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+import ImageMap from "@images/miare-maps.png"
+---
+
+<p class="text-lg font-bold text-center mb-3">Find us on Google Map!</p>
+<a href="https://maps.app.goo.gl/bBY5kjRKvz1kajYSA" target="_blank">
+  <Image
+    src={ImageMap}
+    alt="Office Map"
+    draggable={"false"}
+    format="png"
+    class="rounded-md object-scale-down h-80"
+  />
+</a>

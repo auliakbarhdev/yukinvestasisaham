@@ -5,6 +5,7 @@ import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
 import CardInfo from "@components/ui/cards/CardInfo.astro";
 import FeaturesStatsAlt from "@components/sections/features/FeaturesStatsAlt.astro";
 import TestimonialsSectionAlt from "@components/sections/testimonials/TestimonialsSectionAlt.astro";
+import GoogleMap from "@components/ui/GoogleMap.astro";
 
 import avatar from "@images/icon.png"
 import img1 from "@images/products/product-1.png"
@@ -43,7 +44,7 @@ const title: string = "Tentang Kami";
 const subTitle: string =
   "Kami adalah bagian dari Mirae Asset, sebuah perusahaan investasi global yang berkomitmen untuk membantu Anda mencapai tujuan keuangan Anda. Dengan pengalaman bertahun-tahun di industri ini, kami menawarkan solusi investasi yang inovatif dan disesuaikan dengan kebutuhan Anda.";
 
-const hideTestimonials = false
+const hideTestimonials = true
 
 // Testimonial data that will be rendered in the component
 const testimonials = [
@@ -164,5 +165,9 @@ const pageTitle: string = `Products | ${SITE.title}`;
       title="What Our Customers Say"
       testimonials={testimonials}
     />
+  </div>
+
+  <div class="mb-8">
+    <GoogleMap />
   </div>
 </MainLayout>
