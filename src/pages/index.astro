@@ -3,7 +3,7 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import HeroSection from "@components/sections/landing/HeroSection.astro";
 import HeroSectionAlt from "@components/sections/landing/HeroSectionAlt.astro";
-// import ClientsSection from "@components/sections/landing/ClientsSection.astro";
+import ClientsSection from "@components/sections/landing/ClientsSection.astro";
 import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
 import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
 import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
@@ -32,8 +32,8 @@ const avatarSrcs: Array<string | any> = [];
   />
 
   <HeroSection
-    title=`Selamat Datang di <span
-        class="text-yellow-500 dark:text-yellow-400">Yuk Investasi Saham</span>!`
+    title=`Selamat Datang di Yuk <span
+        class="text-[#2AAA8A] dark:text-[#2AAA8A]">Investasi</span> Saham!`
     subTitle={[
       "Website ini dikelola oleh Kevin Wijaya - Sales Resmi Miare Asset Sekuritas."
     ]}
@@ -49,11 +49,6 @@ const avatarSrcs: Array<string | any> = [];
     src={heroImage}
     alt="A computer showing an investment portfolio"
   />
-
-  <!--<ClientsSection-->
-  <!--  title="Trusted by Industry Leaders"-->
-  <!--  subTitle="Experience the reliability chosen by industry giants."-->
-  <!--/>-->
 
   <FeaturesGeneral
     title="Sekuritas Nomor #1 di Indonesia"
@@ -128,6 +123,11 @@ const avatarSrcs: Array<string | any> = [];
         description: "Aplikasi Saham Fitur Lengkap",
       },
     ]}
+  />
+
+  <ClientsSection
+    title="Pilih Saham Terbaik"
+    subTitle="Miliki saham dari berbagai perusaahan ternama (lebih dari 800 saham) sekarang menjadi lebih mudah"
   />
 
   <AccountSection accounts={accounts} />
