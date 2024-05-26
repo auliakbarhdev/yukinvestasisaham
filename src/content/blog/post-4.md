@@ -1,12 +1,12 @@
 ---
-title: "Strategi Investasi Jangka Panjang yang Sukses"
-description: "Artikel ini membahas strategi investasi jangka panjang yang sukses, termasuk pentingnya disiplin, diversifikasi, dan pemahaman risiko."
+title: "Test"
+description: "Test Create Article"
 author: "Kevin Wijaya"
 authorImage: "@/images/kevin-wijaya-tr.avif"
 authorImageAlt: "Avatar Description"
 pubDate: 2024-05-20
-cardImage: "@/images/hand-holding-small-house-with-tree-growing-out-it.jpg"
-cardImageAlt: "Side view worker wearing gloves"
+cardImage: "https://images.unsplash.com/photo-1617854818583-09e7f077a156?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+cardImageAlt: "Image test"
 readTime: 7
 tags: ["Investasi", "Strategi", "Jangka Panjang", "Sukses"]
 contents: [
