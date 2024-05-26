@@ -11,7 +11,7 @@ readTime: 4
 tags: ["Investasi", "Saham", "Pemula", "Panduan"]
 contents: [
   "Ini baris pertama",
-  "Ini baris kedua",
+  "Ini baris kedua"
 ]
 
 ---
