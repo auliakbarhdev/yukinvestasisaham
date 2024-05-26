@@ -94,7 +94,7 @@ const isImageAvailable = Boolean(imgOne || (imgTwo && imgThree))
         <div />
     ) : (
       imgOne && imgTwo ? (
-        <div class={`mt-2 grid ${imgThree !== undefined ? "grid-cols-3" : "grid-cols-2"} gap-4`}>
+        <div class={`mt-2 grid grid-cols-1 ${imgThree !== undefined ? "md:grid-cols-3" : "md:grid-cols-2"} gap-4`}>
           <!-- First image in a two-image layout -->
           <Image
             class="w-full rounded-xl"
