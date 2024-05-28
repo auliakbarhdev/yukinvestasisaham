@@ -1,7 +1,11 @@
 {
   "subTitle": "Tanyakan kepada kami mengenai perusahaan dan produk, dan dapatkan respon yang faktual.",
   "faqs": [
-
+  
+    {
+      "question": "Siapakah Mirae Asset Sekuritas?",
+      "answer": "PT Mirae Asset Sekuritas Indonesia adalah perusahaan sekuritas yang menawarkan berbagai pelayanan investasi yaitu perantara perdagangan efek, underwriting, reksadana, obligasi, ETF, priority wealth manajamen didukung perusahaan investasi ternama Korea Selatan, Mirae Asset. Kami memiliki 27 office education yang tersebar di kota-kota besar di Indonesia.\n\nMirae Asset Sekuritas terus dipercaya para investor tergambar dari pencapaian kami yang konsisten menjadi broker dengan trading value terbesar di Indonesia."
+    },
     
     {
       "question": "Seberapa besar MKBD Mirae Asset Sekuritas?",
