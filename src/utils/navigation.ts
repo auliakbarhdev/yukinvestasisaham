@@ -29,7 +29,7 @@ export const socialLinks = {
   telegram: "http://t.me/yukinvestasisahamid",
   instagram: "https://www.instagram.com/stockenthusias.id/",
   whatsapp: "https://wa.me/message/ZR63IOXREFFOD1",
-  openAccount: "https://login.miraeasset.co.id/registration/oe?3102663="
+  openAccount: "https://login.miraeasset.co.id/registration/oe?referralcode=3102663"
 };
 
 export default {
