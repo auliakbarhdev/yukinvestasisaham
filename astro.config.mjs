@@ -4,6 +4,7 @@ import vercelStatic from "@astrojs/vercel/static";
 import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
+import { shield } from '@kindspells/astro-shield'
 
 // https://astro.build/config
 export default defineConfig({
@@ -24,6 +25,7 @@ export default defineConfig({
   },
   prefetch: true,
   integrations: [
+    shield({}),
     tailwind(),
     sitemap({
       i18n: {
