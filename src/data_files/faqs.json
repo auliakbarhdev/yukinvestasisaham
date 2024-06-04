@@ -13,21 +13,9 @@
       "question": "Apakah Mirae Asset Sekuritas legal dan diawasi otoritas?",
       "answer": "Mirae Asset Sekuritas secara aktif terdaftar sebagai anggota bursa dan diawasi OJK."
     },
-    //{
-    //"question": "Apakah transaksi saham di Mirae Asset Sekuritas aman?",
-    //"answer": "Demi keamanan dan kenyamanan dalam bertransaksi, kami berkomitmen menyediakan platform trading unggulan dengan perlindungan data yang aman. Dengan bangga kami sampaikan bahwa kami telah memperoleh sertifikasi ISO 27001:2013 sebagai sertifikasi standar untuk sistem keamanan manajemen informasi."
-    //},
-    {
-      "question": "Berapa fee transaksi?",
-      "answer": "Fee beli 0,15% jual 0,25% all in, no biaya admin no biaya bulanan no minimum transaksi.\n\nSemisal kamu membeli saham 1 lot senilai 1jt maka fee belinya 0,15% x 1jt = Rp.1.500. Total cash yg dibayarkan sebesar Rp.1.001.500 (nilai saham 1jt dan fee beli 1,500)."
-    },
-    {
-      "question": "Berapa deposit awal minimum?",
-      "answer": "Deposit awal minimum 10jt. Hal tersebut hanya untuk deposit awal saja kedepan jika mau tambah dana mulai dari 50k tidak harus sebesar di awal dan bisa ditarik kembali. Nasabah mentransfer deposit awal setelah akun aktif dan memperoleh nomor rekening investor, dana deposit ditransfer ke rekening investor milik nasabah sendiri."
-    },
     {
       "question": "Bagaimana cara daftar akun saham Mirae Asset Sekuritas?",
-      "answer": "Step awal mengisi form pendaftaran akun jika anda punya rek BCA, Sinarmas, atau BRI bisa daftar dengan mengisi online form tinggal input data dan upload semua foto persyaratan lalu tunggu proses sampai akun aktif 2 hari kerja.\n\nSelain 3 rek tersebut harus mengisi form fisik dan tanda tangan bermaterai juga melampirkan copy persyaratan KTP NPWP jika ada dan cover buku tabungan. Tunggu proses sampai akun aktif 5 hari kerja\n\nKetika akun sudah aktif anda akan menerima email persetujuan akun berisi user id, password pin, nomor rekening investor, dan lainnya."
+      "answer": "Pembukaan akun di Mirae Asset Sekuritas bisa dilaukan dengan cara mengisi form atau bisa melakukan pengisian secara online. Untuk pengisian secara online bisa dilihat tutorial pengisiannya pada menu "Open an Account  "
     },
     {
       "question": "Bagaimana nasabah bertransaksi saham?",
@@ -35,14 +23,14 @@
     },
     {
       "question": "Selain saham apakah bisa bertransaksi instrumen investasi lainnya?",
-      "answer": "Akun Mirae Asset Sekuritas tidak hanya dapat digunakan untuk bertransaksi saham tapi juga bisa untuk bertransaksi Reksadana di platform NAVI (app dan web based), dan instrumen investasi lainnya."
+      "answer": "Mirae Asset Sekuritas tidak hanya dapat digunakan untuk bertransaksi saham tapi juga bisa untuk bertransaksi Reksadana via NAVI (app dan web based), dan instrumen investasi lainnya."
     },
     {
       "question": "Apa aftersales buka akun saham di Mirae Asset Sekuritas via Pak Kevin?",
       "answer": "Free lifetime join grup trading nasabah dibimbing dan bebas konsultasi dengan Pak Kevin, rekomendasi saham harian, info market terupdate, riset analisis, koran harian."
     },
     {
-      "question": "Sumber pembelajaran untuk nasabah?",
+      "question": "Apakah ada platform pembelajaran untuk nasabah?",
       "answer": "Nasabah dapat mengakses Channel Youtube Mirae Asset Sekuritas tersedia banyak tutorial penggunaan HOTS dan Neo HOTS Mobile juga video tips investasi. Selain itu nasabah dapat mengikuti webinar rutin gratis dengan topik pembahasan beragam di Mirae Asset Academy. Terbaru Live Youtube Morning Meeting bersama tim analis dan tim riset Mirae Asset Sekuritas selama hari bursa jam 8.10 WIB pagi sd selesai."
     }
   ]
