@@ -13,10 +13,10 @@
       "question": "Apakah Mirae Asset Sekuritas legal dan diawasi otoritas?",
       "answer": "Mirae Asset Sekuritas secara aktif terdaftar sebagai anggota bursa dan diawasi OJK."
     },
-    {
-      "question": "Apakah transaksi saham di Mirae Asset Sekuritas aman?",
-      "answer": "Demi keamanan dan kenyamanan dalam bertransaksi, kami berkomitmen menyediakan platform trading unggulan dengan perlindungan data yang aman. Dengan bangga kami sampaikan bahwa kami telah memperoleh sertifikasi ISO 27001:2013 sebagai sertifikasi standar untuk sistem keamanan manajemen informasi."
-    },
+    //{
+    //"question": "Apakah transaksi saham di Mirae Asset Sekuritas aman?",
+    //"answer": "Demi keamanan dan kenyamanan dalam bertransaksi, kami berkomitmen menyediakan platform trading unggulan dengan perlindungan data yang aman. Dengan bangga kami sampaikan bahwa kami telah memperoleh sertifikasi ISO 27001:2013 sebagai sertifikasi standar untuk sistem keamanan manajemen informasi."
+    //},
     {
       "question": "Berapa fee transaksi?",
       "answer": "Fee beli 0,15% jual 0,25% all in, no biaya admin no biaya bulanan no minimum transaksi.\n\nSemisal kamu membeli saham 1 lot senilai 1jt maka fee belinya 0,15% x 1jt = Rp.1.500. Total cash yg dibayarkan sebesar Rp.1.001.500 (nilai saham 1jt dan fee beli 1,500)."
