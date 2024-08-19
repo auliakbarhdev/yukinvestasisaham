@@ -25,6 +25,7 @@ interface Guides {
   single?: boolean;
   img?: any;
   imgAlt?: string;
+  youtubeId?: string;
   imgOne?: any;
   imgOneAlt?: string;
   imgTwo?: any;
@@ -47,6 +48,7 @@ const guides: Guides[] = [
       "Minimal deposit awal 10jt, deposit dilakukan setelah mendapat rekening investor."
     ],
     single: true,
+    youtubeId: '04K1Ac8-vtM',
     imgOne: personWorking,
     imgOneAlt: "Person working in the office"
   },
@@ -131,6 +133,7 @@ const pageTitle: string = `Cara Buka Akun | ${SITE.title}`;
         list={item.list}
         orderedList={item.orderedList}
         single={item.single}
+        youtubeId={item.youtubeId}
         imgOne={item.imgOne}
         imgOneAlt={item.imgOneAlt}
         imgTwo={item.imgTwo}

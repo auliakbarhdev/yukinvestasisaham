@@ -2,6 +2,7 @@
 // Import the required modules
 import { Image } from "astro:assets";
 import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
+import { YouTube } from "astro-embed";
 // Extract properties from Astro.props
 const {
   title,
@@ -12,6 +13,7 @@ const {
   btnTitle,
   btnURL,
   single,
+  youtubeId,
   imgOne,
   imgOneAlt,
   imgTwo,
@@ -30,6 +32,7 @@ interface Props {
   btnTitle?: string;
   btnURL?: string;
   single?: boolean;
+  youtubeId?: string;
   imgOne?: any;
   imgOneAlt?: any;
   imgTwo?: any;
@@ -80,6 +83,12 @@ const isImageAvailable = Boolean(imgOne || (imgTwo && imgThree))
   <!-- Conditionally render one or two images based on 'single' property -->
   {
     single ? (
+      !!youtubeId ? (
+          <!-- YouTube video embedding -->
+          <div class="mt-2">
+            <YouTube id={youtubeId} class="w-full rounded-lg" />
+          </div>
+        ) :
       imgOne ? (
           <div class="mt-2">
             <!-- Single image -->
