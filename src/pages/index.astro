@@ -4,6 +4,7 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import HeroSection from "@components/sections/landing/HeroSection.astro";
 import HeroSectionAlt from "@components/sections/landing/HeroSectionAlt.astro";
 import ClientsSection from "@components/sections/landing/ClientsSection.astro";
+import InvestmentTypes from "@components/sections/landing/InvestmentTypes.astro";
 import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
 import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
 import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
@@ -25,15 +26,17 @@ const avatarSrcs: Array<string | any> = [];
 ---
 
 <MainLayout>
-  <AnnouncementBanner
-    btnId="dismiss-button"
-    btnTitle="Claim hadiah sekarang"
-    url={socialLinks.openAccount}
-  />
+  <div class="hidden">
+    <AnnouncementBanner
+      btnId="dismiss-button"
+      btnTitle="Claim hadiah sekarang"
+      url={socialLinks.openAccount}
+    />
+  </div>
 
   <HeroSection
     title=`Selamat Datang di Yuk <span
-        class="text-[#2AAA8A] dark:text-[#2AAA8A]">Investasi</span> Saham!`
+        class="text-accent dark:text-accent">Investasi</span> Saham!`
     subTitle={[
       "Website ini dikelola oleh Kevin Wijaya - Sales Resmi Miare Asset Sekuritas."
     ]}
@@ -125,12 +128,51 @@ const avatarSrcs: Array<string | any> = [];
     ]}
   />
 
+  <InvestmentTypes
+    title="Pilih Aset Sesuai Tujuan Finansial"
+    subtitle="Aset investasi dari risiko paling rendah ke tinggi"
+    items={[
+      {
+        icon: 'tabler:trending-up',
+        title: 'Saham',
+        description:
+          "600+ saham Indonesia untuk tingkatkan peluang keuntungan",
+      },
+      {
+        icon: 'fluent-mdl2:money',
+        title: 'Reksa dana',
+        description:
+          "Produk reksa dana terbaik dengan harga mulai Rp10.000",
+      },
+      {
+        icon: 'tabler:certificate',
+        title: 'Obligasi',
+        description:
+          "560+ obligasi Republik Indonesia paling lengkap",
+      },
+      {
+        icon: 'tabler:chart-bar',
+        title: 'Exchange Traded Fund (ETF)',
+        description:
+          "Peluang transaksi banyak saham, tingkatkan peluang cuan",
+      },
+      {
+        icon: 'flowbite:clipboard-list-outline',
+        title: 'Structure Warrant',
+        description:
+          "Raih potensi keuntungan tanpa batas",
+      },
+    ]}
+  />
+
   <ClientsSection
     title="Pilih Saham Terbaik"
     subTitle="Miliki saham dari berbagai perusaahan ternama (lebih dari 800 saham) sekarang menjadi lebih mudah"
   />
 
-  <AccountSection accounts={accounts} />
+  <div class="hidden">
+    <AccountSection accounts={accounts} />
+  </div>
 
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 

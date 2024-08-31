@@ -10,6 +10,7 @@ export default {
     colors: {
       transparent: "transparent",
       current: "currentColor",
+      accent: "#2AAA8A",
       black: "#000000",
       white: "#ffffff",
       gray: colors.gray,

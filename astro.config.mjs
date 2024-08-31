@@ -4,7 +4,8 @@ import vercelStatic from "@astrojs/vercel/static";
 import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
-import { shield } from '@kindspells/astro-shield'
+import { shield } from '@kindspells/astro-shield';
+import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
@@ -27,6 +28,26 @@ export default defineConfig({
   integrations: [
     shield({}),
     tailwind(),
+    icon({
+      include: {
+        tabler: ['*'],
+        flowbite: ['*'],
+        ic: ['*'],
+        iconoir: ['*'],
+        'fluent-mdl2': ['*'],
+        'flat-color-icons': [
+          'template',
+          'gallery',
+          'approval',
+          'document',
+          'advertising',
+          'currency-exchange',
+          'voice-presentation',
+          'business-contact',
+          'database',
+        ],
+      },
+    }),
     sitemap({
       i18n: {
         defaultLocale: "en", // All urls that don't contain `fr` after `https://domain/` will be treated as default locale, i.e. `en`
