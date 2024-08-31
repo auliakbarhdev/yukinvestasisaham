@@ -5,6 +5,7 @@ import HeroSection from "@components/sections/landing/HeroSection.astro";
 import HeroSectionAlt from "@components/sections/landing/HeroSectionAlt.astro";
 import ClientsSection from "@components/sections/landing/ClientsSection.astro";
 import InvestmentTypes from "@components/sections/landing/InvestmentTypes.astro";
+import Content from "@components/sections/landing/Content.astro";
 import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
 import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
 import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
@@ -21,6 +22,9 @@ import dashboard from "@images/section-03.png";
 
 import avatar from "@images/kevin-wijaya-tr.png"
 import { socialLinks } from "@utils/navigation";
+
+import MstockImageGif from "@images/mstock.gif";
+import MstockImage from "@images/mstock.png";
 
 const avatarSrcs: Array<string | any> = [];
 ---
@@ -91,6 +95,91 @@ const avatarSrcs: Array<string | any> = [];
       },
     ]}
   />
+
+  <Content
+    isReversed
+    tagline="Akses mudah dalam genggaman"
+    title="#SaatnyaJadiMapan dengan M-STOCK dari Mirae Asset"
+    items={[
+      {
+        title: 'Cocok untuk semua kalangan, dari newbie hingga pro',
+        description:
+          'Aplikasi dirancang untuk mengakomodasi berbagai tingkat pemahaman dan pengalaman investasi. Baik Anda seorang pemula yang baru ingin memulai, atau investor berpengalaman yang mencari strategi lanjutan, semua akan menemukan fitur dan informasi yang relevan.',
+      },
+      {
+        title: 'Akses informasi lengkap & eksklusif dari expert, baik dalam & luar negeri',
+        description:
+          'Tim analis berpengalaman menyediakan analisis pasar yang mendalam dan up-to-date, sehingga pengguna dapat membuat keputusan investasi yang lebih informatif.',
+      },
+      {
+        title: 'Kecepatan transaksi yang konsisten di seluruh Indonesia',
+        description:
+          'Nikmati pengalaman berinvestasi yang lancar, cepat dan aman di mana pun Anda berada.',
+      },
+    ]}
+    gifImage={MstockImageGif}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Jutaan Peluang Investasi dalam Satu Aplikasi</h3>
+      Manfaatkan jutaan peluang investasi untuk mencapai tujuan finansial Anda.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    isReversed
+    isAfterContent
+    title="Jadilah Semakin Mantap Pilih M-STOCK"
+    items={[
+      {
+        title: 'Trailing Stop',
+        description: `Minimalkan risiko & maksimalkan cuan secara otomatis. Cuan aman tanpa drama!`,
+        icon: 'flowbite:chart-mixed-dollar-outline',
+        classes: {
+          icon: 'flex h-12 w-12 items-center justify-center rounded-xl bg-accent text-gray-50 p-2',
+        },
+      },
+      {
+        title: 'Holistic Market Insight',
+        description:
+          'Dapatkan berita/info seputar pasar dari praktisi hingga yang berlisensi, dari dalam hingga luar negri.',
+        icon: 'fluent-mdl2:insights',
+        classes: {
+          icon: 'flex h-12 w-12 items-center justify-center rounded-xl bg-accent text-gray-50 p-2',
+        },
+      },
+      {
+        title: 'One-Click Portofolio',
+        description:
+          "Pantau seluruh portofolio kamu di Ekosistem Mirae Asset hanya dengan satu klik.",
+        icon: 'tabler:hand-click',
+        classes: {
+          icon: 'flex h-12 w-12 items-center justify-center rounded-xl bg-accent text-gray-50 p-2',
+        },
+      },
+      {
+        title: 'Smart Notification',
+        description:
+          'No refresh-refresh club! Status transaksi terupdate secara real-time di home page.',
+        icon: 'tabler:notification',
+        classes: {
+          icon: 'flex h-12 w-12 items-center justify-center rounded-xl bg-accent text-gray-50 p-2',
+        },
+      },
+    ]}
+    image={{
+      src: MstockImage,
+      alt: 'MSTOCK Image',
+    }}
+    imageStyle="mx-auto w-full rounded-lg"
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
 
   <TestimonialsSection
     title="Kelola Keuangan Anda"
