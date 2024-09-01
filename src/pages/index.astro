@@ -64,37 +64,39 @@ const avatarSrcs: Array<string | any> = [];
     features={features}
   />
 
-  <FeaturesNavs
-    title=`Sesuaikan penawaran dari <span class="text-yellow-500 dark:text-yellow-400">Mirae Asset</span> untuk memenuhi kebutuhan investasi dan keuangan Anda secara sempurna.`
-    tabs={[
-      {
-        heading: "Alat Investasi Terkini",
-        content:
-          "Tingkatkan proyek investasi Anda dengan alat-alat terkini dari Mirae Asset. Rasakan efisiensi yang lebih tinggi dalam manajemen investasi dengan solusi otomatis kami yang canggih.",
-        svg: "tools",
-        src: coins,
-        alt: "Silver and golden coins falling on wooden background",
-        first: true,
-      },
-      {
-        heading: "Dasbor yang Intuitif",
-        content:
-          "Navigasikan dengan mudah menggunakan dasbor intuitif dari Mirae Asset. Atur dan awasi investasi Anda dengan lancar, dengan antarmuka yang ramah pengguna yang dirancang untuk manajemen alur kerja yang cepat dan efektif.",
-        svg: "dashboard",
-        src: dashboard,
-        alt: "A screenshot or graphic representation of the intuitive dashboard",
-        second: true,
-      },
-      {
-        heading: "Fitur-Fitur Unggulan",
-        content:
-          "Minimalkan kompleksitas, maksimalkan produktivitas. Fitur-fitur unggulan dari Mirae Asset dirancang untuk menyederhanakan proses investasi Anda, memberikan hasil yang menonjol karena keunggulannya.",
-        svg: "house",
-        src: man,
-        alt: "closeup shot businessman's hands counting stacks coins after business success",
-      },
-    ]}
-  />
+  <div class="hidden">
+    <FeaturesNavs
+      title=`Sesuaikan penawaran dari <span class="text-yellow-500 dark:text-yellow-400">Mirae Asset</span> untuk memenuhi kebutuhan investasi dan keuangan Anda secara sempurna.`
+      tabs={[
+        {
+          heading: "Alat Investasi Terkini",
+          content:
+            "Tingkatkan proyek investasi Anda dengan alat-alat terkini dari Mirae Asset. Rasakan efisiensi yang lebih tinggi dalam manajemen investasi dengan solusi otomatis kami yang canggih.",
+          svg: "tools",
+          src: coins,
+          alt: "Silver and golden coins falling on wooden background",
+          first: true,
+        },
+        {
+          heading: "Dasbor yang Intuitif",
+          content:
+            "Navigasikan dengan mudah menggunakan dasbor intuitif dari Mirae Asset. Atur dan awasi investasi Anda dengan lancar, dengan antarmuka yang ramah pengguna yang dirancang untuk manajemen alur kerja yang cepat dan efektif.",
+          svg: "dashboard",
+          src: dashboard,
+          alt: "A screenshot or graphic representation of the intuitive dashboard",
+          second: true,
+        },
+        {
+          heading: "Fitur-Fitur Unggulan",
+          content:
+            "Minimalkan kompleksitas, maksimalkan produktivitas. Fitur-fitur unggulan dari Mirae Asset dirancang untuk menyederhanakan proses investasi Anda, memberikan hasil yang menonjol karena keunggulannya.",
+          svg: "house",
+          src: man,
+          alt: "closeup shot businessman's hands counting stacks coins after business success",
+        },
+      ]}
+    />
+  </div>
 
   <Content
     isReversed
